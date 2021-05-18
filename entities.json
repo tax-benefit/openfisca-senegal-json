@@ -1,0 +1,41 @@
+{
+  "household": {
+    "documentation": "Household is an example of a group entity.\nA group entity contains one or more individual·s.\nFor more information, see: https://openfisca.org/doc/coding-the-legislation/50_entities.html",
+    "key": "household",
+    "key_plural": "households",
+    "label": "Household",
+    "roles": [
+      {
+        "documentation": "La personne de référence dans le ménage.",
+        "key": "personne_de_reference",
+        "label": "Personne de reference (Chef-fe de ménage)",
+        "max": 1
+      },
+      {
+        "documentation": "Le/la conjoint-e de la personne de référence.",
+        "key": "conjoint",
+        "label": "Conjoint de la personne de référence",
+        "max": 1
+      },
+      {
+        "documentation": "Enfant à la charge de la personne de référence et de son conjoint\n            - il peut y avoir d'autres enfant dans le ménage",
+        "key": "enfant",
+        "key_plural": "enfants",
+        "label": "Enfant"
+      },
+      {
+        "documentation": "Membres du ménage différents de la personne de référence, de son/sa conjoint-e et de leurs enfants",
+        "key": "autre_membre",
+        "key_plural": "autres_membres",
+        "label": "Autres membres du ménage"
+      }
+    ]
+  },
+  "person": {
+    "documentation": "A Person represents an individual, the minimal legal entity on which a legislation might be applied.\nFor more information, see: https://openfisca.org/doc/coding-the-legislation/50_entities.html",
+    "is_person": true,
+    "key": "person",
+    "key_plural": "persons",
+    "label": "Person"
+  }
+}

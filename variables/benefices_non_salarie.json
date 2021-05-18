@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/revenus.py",
+  "json_type": "number",
+  "label": "Bénéfices non salarié",
+  "name": "benefices_non_salarie",
+  "start_line_number": 5,
+  "stop_line_number": 10,
+  "value_type": "float"
+}

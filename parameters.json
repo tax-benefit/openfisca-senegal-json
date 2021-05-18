@@ -1,0 +1,679 @@
+{
+  "children": {
+    "nombre_de_parts": {
+      "children": {
+        "limite_max": {
+          "class": "Parameter",
+          "description": "Limite du nombre de part maximal",
+          "file_path": "/openfisca_senegal/parameters/nombre_de_parts/limite_max.yaml",
+          "name": "nombre_de_parts.limite_max",
+          "values": [
+            {
+              "file_path": "/openfisca_senegal/parameters/nombre_de_parts/limite_max.yaml",
+              "instant": "2013-01-01",
+              "name": "nombre_de_parts.limite_max[2013-01-01]",
+              "value": 5
+            }
+          ]
+        },
+        "par_enfant": {
+          "class": "Parameter",
+          "description": "Nombre de part par enfant à charge",
+          "file_path": "/openfisca_senegal/parameters/nombre_de_parts/par_enfant.yaml",
+          "name": "nombre_de_parts.par_enfant",
+          "values": [
+            {
+              "file_path": "/openfisca_senegal/parameters/nombre_de_parts/par_enfant.yaml",
+              "instant": "2013-01-01",
+              "name": "nombre_de_parts.par_enfant[2013-01-01]",
+              "value": 0.5
+            }
+          ]
+        },
+        "repartition_marie_conjoint": {
+          "class": "Parameter",
+          "description": "Valeur de la répartition du nombre de parts entre marie et conjoint",
+          "file_path": "/openfisca_senegal/parameters/nombre_de_parts/repartition_marie_conjoint.yaml",
+          "name": "nombre_de_parts.repartition_marie_conjoint",
+          "values": [
+            {
+              "file_path": "/openfisca_senegal/parameters/nombre_de_parts/repartition_marie_conjoint.yaml",
+              "instant": "2013-01-01",
+              "name": "nombre_de_parts.repartition_marie_conjoint[2013-01-01]",
+              "value": 0.5
+            }
+          ]
+        },
+        "veuf_avec_enfant": {
+          "class": "Parameter",
+          "description": "Part supplémentaire pour veuf avec enfant",
+          "file_path": "/openfisca_senegal/parameters/nombre_de_parts/veuf_avec_enfant.yaml",
+          "name": "nombre_de_parts.veuf_avec_enfant",
+          "values": [
+            {
+              "file_path": "/openfisca_senegal/parameters/nombre_de_parts/veuf_avec_enfant.yaml",
+              "instant": "2013-01-01",
+              "name": "nombre_de_parts.veuf_avec_enfant[2013-01-01]",
+              "value": 0.5
+            }
+          ]
+        }
+      },
+      "class": "Node",
+      "file_path": "/openfisca_senegal/parameters/nombre_de_parts",
+      "name": "nombre_de_parts"
+    },
+    "prelevements_obligatoires": {
+      "children": {
+        "impots_directs": {
+          "children": {
+            "bareme_impot_progressif": {
+              "brackets": {
+                "2013-01-01": {
+                  "0.0": 0.0,
+                  "630000.0": 0.2,
+                  "1500000.0": 0.3,
+                  "4000000.0": 0.35,
+                  "8000000.0": 0.37,
+                  "13500000.0": 0.4
+                }
+              },
+              "class": "Scale",
+              "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/bareme_impot_progressif.yaml",
+              "name": "prelevements_obligatoires.impots_directs.bareme_impot_progressif",
+              "type": "marginal_rate",
+              "unit": "currency"
+            },
+            "reductions_pour_charge_de_famille": {
+              "children": {
+                "max_1": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_1.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_1",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_1.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_1[2013-01-01]",
+                      "unit": "currency",
+                      "value": 0.0
+                    }
+                  ]
+                },
+                "max_2": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_2.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_2",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_2.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_2[2013-01-01]",
+                      "unit": "currency",
+                      "value": 300000.0
+                    }
+                  ]
+                },
+                "max_3": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_3.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_3",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_3.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_3[2013-01-01]",
+                      "unit": "currency",
+                      "value": 650000.0
+                    }
+                  ]
+                },
+                "max_4": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_4.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_4",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_4.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_4[2013-01-01]",
+                      "unit": "currency",
+                      "value": 1100000.0
+                    }
+                  ]
+                },
+                "max_5": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_5.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_5",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_5.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_5[2013-01-01]",
+                      "unit": "currency",
+                      "value": 1650000.0
+                    }
+                  ]
+                },
+                "max_6": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_6.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_6",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_6.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_6[2013-01-01]",
+                      "unit": "currency",
+                      "value": 2030000.0
+                    }
+                  ]
+                },
+                "max_7": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_7.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_7",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_7.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_7[2013-01-01]",
+                      "unit": "currency",
+                      "value": 2490000.0
+                    }
+                  ]
+                },
+                "max_8": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_8.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_8",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_8.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_8[2013-01-01]",
+                      "unit": "currency",
+                      "value": 2755000.0
+                    }
+                  ]
+                },
+                "max_9": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_9.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_9",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/max_9.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.max_9[2013-01-01]",
+                      "unit": "currency",
+                      "value": 3180000.0
+                    }
+                  ]
+                },
+                "min_1": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_1.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_1",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_1.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_1[2013-01-01]",
+                      "unit": "currency",
+                      "value": 0.0
+                    }
+                  ]
+                },
+                "min_2": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_2.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_2",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_2.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_2[2013-01-01]",
+                      "unit": "currency",
+                      "value": 100000.0
+                    }
+                  ]
+                },
+                "min_3": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_3.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_3",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_3.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_3[2013-01-01]",
+                      "unit": "currency",
+                      "value": 200000.0
+                    }
+                  ]
+                },
+                "min_4": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_4.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_4",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_4.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_4[2013-01-01]",
+                      "unit": "currency",
+                      "value": 300000.0
+                    }
+                  ]
+                },
+                "min_5": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_5.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_5",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_5.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_5[2013-01-01]",
+                      "unit": "currency",
+                      "value": 400000.0
+                    }
+                  ]
+                },
+                "min_6": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_6.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_6",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_6.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_6[2013-01-01]",
+                      "unit": "currency",
+                      "value": 500000.0
+                    }
+                  ]
+                },
+                "min_7": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_7.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_7",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_7.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_7[2013-01-01]",
+                      "unit": "currency",
+                      "value": 600000.0
+                    }
+                  ]
+                },
+                "min_8": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_8.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_8",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_8.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_8[2013-01-01]",
+                      "unit": "currency",
+                      "value": 700000.0
+                    }
+                  ]
+                },
+                "min_9": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_9.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_9",
+                  "unit": "currency",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/min_9.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.min_9[2013-01-01]",
+                      "unit": "currency",
+                      "value": 800000.0
+                    }
+                  ]
+                },
+                "taux_1": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_1.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_1",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_1.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_1[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.0
+                    }
+                  ]
+                },
+                "taux_2": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_2.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_2",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_2.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_2[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.1
+                    }
+                  ]
+                },
+                "taux_3": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_3.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_3",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_3.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_3[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.15
+                    }
+                  ]
+                },
+                "taux_4": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_4.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_4",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_4.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_4[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.2
+                    }
+                  ]
+                },
+                "taux_5": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_5.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_5",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_5.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_5[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.25
+                    }
+                  ]
+                },
+                "taux_6": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_6.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_6",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_6.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_6[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.3
+                    }
+                  ]
+                },
+                "taux_7": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_7.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_7",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_7.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_7[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.35
+                    }
+                  ]
+                },
+                "taux_8": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_8.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_8",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_8.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_8[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.4
+                    }
+                  ]
+                },
+                "taux_9": {
+                  "class": "Parameter",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_9.yaml",
+                  "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_9",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille/taux_9.yaml",
+                      "instant": "2013-01-01",
+                      "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille.taux_9[2013-01-01]",
+                      "unit": "/1",
+                      "value": 0.45
+                    }
+                  ]
+                }
+              },
+              "class": "Node",
+              "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs/reductions_pour_charge_de_famille",
+              "name": "prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille"
+            }
+          },
+          "class": "Node",
+          "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_directs",
+          "name": "prelevements_obligatoires.impots_directs"
+        },
+        "impots_indirects": {
+          "children": {
+            "droits_douane": {
+              "children": {
+                "biens_specifiques": {
+                  "class": "Parameter",
+                  "description": "Biens spécifiques pour le développement économique",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.biens_specifiques",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.biens_specifiques[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.35
+                    }
+                  ]
+                },
+                "consommation_finale": {
+                  "class": "Parameter",
+                  "description": "Biens de consommation finale",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.consommation_finale",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.consommation_finale[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.2
+                    }
+                  ]
+                },
+                "consommation_intermediaire": {
+                  "class": "Parameter",
+                  "description": "Intrants et produits intermédiaires",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.consommation_intermediaire",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.consommation_intermediaire[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.1
+                    }
+                  ]
+                },
+                "equipements": {
+                  "class": "Parameter",
+                  "description": "Produits de première nécessité, matières premières de base, biens d’équipement, intrants spécifiques",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.equipements",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.equipements[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.05
+                    }
+                  ]
+                },
+                "exonere": {
+                  "class": "Parameter",
+                  "description": "Biens sociaux essentiels",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.exonere",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.exonere[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0
+                    }
+                  ]
+                },
+                "prelevement_communautaire_de_solidarite": {
+                  "class": "Parameter",
+                  "description": "Prélèvement Communautaire de Solidarité (PCS)",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.prelevement_communautaire_de_solidarite",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.prelevement_communautaire_de_solidarite[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.01
+                    }
+                  ]
+                },
+                "redevance_statistique": {
+                  "class": "Parameter",
+                  "description": "Redevance Statistique (RS)",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.droits_douane.redevance_statistique",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.droits_douane.redevance_statistique[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.01
+                    }
+                  ]
+                }
+              },
+              "class": "Node",
+              "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/droits_douane.yaml",
+              "name": "prelevements_obligatoires.impots_indirects.droits_douane"
+            },
+            "tva": {
+              "children": {
+                "taux_normal": {
+                  "class": "Parameter",
+                  "description": "Taux normal",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/tva.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.tva.taux_normal",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/tva.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.tva.taux_normal[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.18
+                    }
+                  ]
+                },
+                "taux_reduit": {
+                  "class": "Parameter",
+                  "description": "Taux réduit",
+                  "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/tva.yaml",
+                  "name": "prelevements_obligatoires.impots_indirects.tva.taux_reduit",
+                  "unit": "/1",
+                  "values": [
+                    {
+                      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/tva.yaml",
+                      "instant": "2007-01-01",
+                      "name": "prelevements_obligatoires.impots_indirects.tva.taux_reduit[2007-01-01]",
+                      "unit": "/1",
+                      "value": 0.1
+                    }
+                  ]
+                }
+              },
+              "class": "Node",
+              "description": "Taxe sur la valeur ajoutée",
+              "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects/tva.yaml",
+              "name": "prelevements_obligatoires.impots_indirects.tva"
+            }
+          },
+          "class": "Node",
+          "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires/impots_indirects",
+          "name": "prelevements_obligatoires.impots_indirects"
+        }
+      },
+      "class": "Node",
+      "file_path": "/openfisca_senegal/parameters/prelevements_obligatoires",
+      "name": "prelevements_obligatoires"
+    }
+  },
+  "class": "Node",
+  "file_path": "/openfisca_senegal/parameters",
+  "name": ""
+}

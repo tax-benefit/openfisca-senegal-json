@@ -1,0 +1,275 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/prelevements_obligatoires/impots_directs.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 85,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 33,
+                "end_lineno": 2,
+                "id": "impot_avant_reduction_famille",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 45,
+                  "end_col_offset": 76,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "impot_avant_reduction_famille"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 78,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 84,
+                  "end_lineno": 2,
+                  "id": "period",
+                  "lineno": 2
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 36,
+              "end_col_offset": 85,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 36,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 44,
+                "end_lineno": 2,
+                "id": "individu",
+                "lineno": 2
+              },
+              "keywords": [],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 99,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 40,
+                "end_lineno": 3,
+                "id": "reduction_impots_pour_charge_famille",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 52,
+                  "end_col_offset": 90,
+                  "end_lineno": 3,
+                  "lineno": 3,
+                  "value": "reduction_impots_pour_charge_famille"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 92,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 98,
+                  "end_lineno": 3,
+                  "id": "period",
+                  "lineno": 3
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 43,
+              "end_col_offset": 99,
+              "end_lineno": 3,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 43,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 51,
+                "end_lineno": 3,
+                "id": "individu",
+                "lineno": 3
+              },
+              "keywords": [],
+              "lineno": 3
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 104,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 33,
+                "end_lineno": 4,
+                "id": "impot_apres_reduction_famille",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 36,
+              "end_col_offset": 104,
+              "end_lineno": 4,
+              "left": {
+                "ast_class": "Name",
+                "col_offset": 36,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 65,
+                "end_lineno": 4,
+                "id": "impot_avant_reduction_famille",
+                "lineno": 4
+              },
+              "lineno": 4,
+              "op": {
+                "ast_class": "Sub"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 68,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 104,
+                "end_lineno": 4,
+                "id": "reduction_impots_pour_charge_famille",
+                "lineno": 4
+              }
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 49,
+            "end_lineno": 5,
+            "lineno": 5,
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 16,
+                  "end_col_offset": 17,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": 0
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 19,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 48,
+                  "end_lineno": 5,
+                  "id": "impot_apres_reduction_famille",
+                  "lineno": 5
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 49,
+              "end_lineno": 5,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 15,
+                "end_lineno": 5,
+                "id": "max_",
+                "lineno": 5
+              },
+              "keywords": [],
+              "lineno": 5
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 49,
+        "end_lineno": 5,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_senegal/variables/prelevements_obligatoires/impots_directs.py",
+      "source_code": "def formula(individu, period):\n    impot_avant_reduction_famille = individu('impot_avant_reduction_famille', period)\n    reduction_impots_pour_charge_famille = individu('reduction_impots_pour_charge_famille', period)\n    impot_apres_reduction_famille = impot_avant_reduction_famille - reduction_impots_pour_charge_famille\n    return max_(0, impot_apres_reduction_famille)\n",
+      "start_line_number": 109,
+      "stop_line_number": 114
+    }
+  },
+  "json_type": "number",
+  "name": "impot_revenus",
+  "start_line_number": 104,
+  "stop_line_number": 114,
+  "value_type": "float"
+}

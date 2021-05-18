@@ -1,0 +1,1008 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/prelevements_obligatoires/impots_directs.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "parameters",
+              "ast_class": "arg",
+              "col_offset": 30,
+              "end_col_offset": 40,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 78,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 30,
+                "end_lineno": 2,
+                "id": "nombre_de_parts_par_enfant",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "par_enfant",
+              "col_offset": 33,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 78,
+              "end_lineno": 2,
+              "lineno": 2,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "nombre_de_parts",
+                "col_offset": 33,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 67,
+                "end_lineno": 2,
+                "lineno": 2,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Name",
+                      "col_offset": 44,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 50,
+                      "end_lineno": 2,
+                      "id": "period",
+                      "lineno": 2
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 33,
+                  "end_col_offset": 51,
+                  "end_lineno": 2,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 33,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 43,
+                    "end_lineno": 2,
+                    "id": "parameters",
+                    "lineno": 2
+                  },
+                  "keywords": [],
+                  "lineno": 2
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 74,
+            "end_lineno": 3,
+            "lineno": 3,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 26,
+                "end_lineno": 3,
+                "id": "limite_nombre_de_parts",
+                "lineno": 3
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "limite_max",
+              "col_offset": 29,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 74,
+              "end_lineno": 3,
+              "lineno": 3,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "nombre_de_parts",
+                "col_offset": 29,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 63,
+                "end_lineno": 3,
+                "lineno": 3,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Name",
+                      "col_offset": 40,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 46,
+                      "end_lineno": 3,
+                      "id": "period",
+                      "lineno": 3
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 29,
+                  "end_col_offset": 47,
+                  "end_lineno": 3,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 29,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 39,
+                    "end_lineno": 3,
+                    "id": "parameters",
+                    "lineno": 3
+                  },
+                  "keywords": [],
+                  "lineno": 3
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 94,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 30,
+                "end_lineno": 4,
+                "id": "repartition_marie_conjoint",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "repartition_marie_conjoint",
+              "col_offset": 33,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 94,
+              "end_lineno": 4,
+              "lineno": 4,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "nombre_de_parts",
+                "col_offset": 33,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 67,
+                "end_lineno": 4,
+                "lineno": 4,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Name",
+                      "col_offset": 44,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 50,
+                      "end_lineno": 4,
+                      "id": "period",
+                      "lineno": 4
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 33,
+                  "end_col_offset": 51,
+                  "end_lineno": 4,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 33,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 43,
+                    "end_lineno": 4,
+                    "id": "parameters",
+                    "lineno": 4
+                  },
+                  "keywords": [],
+                  "lineno": 4
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 74,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 20,
+                "end_lineno": 5,
+                "id": "veuf_avec_enfant",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "veuf_avec_enfant",
+              "col_offset": 23,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 74,
+              "end_lineno": 5,
+              "lineno": 5,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "nombre_de_parts",
+                "col_offset": 23,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 57,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "args": [
+                    {
+                      "ast_class": "Name",
+                      "col_offset": 34,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 40,
+                      "end_lineno": 5,
+                      "id": "period",
+                      "lineno": 5
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 23,
+                  "end_col_offset": 41,
+                  "end_lineno": 5,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 23,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 33,
+                    "end_lineno": 5,
+                    "id": "parameters",
+                    "lineno": 5
+                  },
+                  "keywords": [],
+                  "lineno": 5
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 45,
+            "end_lineno": 7,
+            "lineno": 7,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 13,
+                "end_lineno": 7,
+                "id": "est_marie",
+                "lineno": 7
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 25,
+                  "end_col_offset": 36,
+                  "end_lineno": 7,
+                  "lineno": 7,
+                  "value": "est_marie"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 38,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 44,
+                  "end_lineno": 7,
+                  "id": "period",
+                  "lineno": 7
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 16,
+              "end_col_offset": 45,
+              "end_lineno": 7,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 16,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 24,
+                "end_lineno": 7,
+                "id": "individu",
+                "lineno": 7
+              },
+              "keywords": [],
+              "lineno": 7
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 43,
+            "end_lineno": 8,
+            "lineno": 8,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 12,
+                "end_lineno": 8,
+                "id": "est_veuf",
+                "lineno": 8
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 24,
+                  "end_col_offset": 34,
+                  "end_lineno": 8,
+                  "lineno": 8,
+                  "value": "est_veuf"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 36,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 42,
+                  "end_lineno": 8,
+                  "id": "period",
+                  "lineno": 8
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 15,
+              "end_col_offset": 43,
+              "end_lineno": 8,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 15,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 23,
+                "end_lineno": 8,
+                "id": "individu",
+                "lineno": 8
+              },
+              "keywords": [],
+              "lineno": 8
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 55,
+            "end_lineno": 9,
+            "lineno": 9,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 18,
+                "end_lineno": 9,
+                "id": "nombre_enfants",
+                "lineno": 9
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 30,
+                  "end_col_offset": 46,
+                  "end_lineno": 9,
+                  "lineno": 9,
+                  "value": "nombre_enfants"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 48,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 54,
+                  "end_lineno": 9,
+                  "id": "period",
+                  "lineno": 9
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 21,
+              "end_col_offset": 55,
+              "end_lineno": 9,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 21,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 29,
+                "end_lineno": 9,
+                "id": "individu",
+                "lineno": 9
+              },
+              "keywords": [],
+              "lineno": 9
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 77,
+            "end_lineno": 10,
+            "lineno": 10,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 21,
+                "end_lineno": 10,
+                "id": "parts_enfant_veuf",
+                "lineno": 10
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 24,
+              "end_col_offset": 77,
+              "end_lineno": 10,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 24,
+                "end_col_offset": 51,
+                "end_lineno": 10,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 24,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 32,
+                  "end_lineno": 10,
+                  "id": "est_veuf",
+                  "lineno": 10
+                },
+                "lineno": 10,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 35,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 51,
+                  "end_lineno": 10,
+                  "id": "veuf_avec_enfant",
+                  "lineno": 10
+                }
+              },
+              "lineno": 10,
+              "op": {
+                "ast_class": "Mult"
+              },
+              "right": {
+                "args": [
+                  {
+                    "ast_class": "Constant",
+                    "col_offset": 59,
+                    "end_col_offset": 60,
+                    "end_lineno": 10,
+                    "lineno": 10,
+                    "value": 1
+                  },
+                  {
+                    "ast_class": "Name",
+                    "col_offset": 62,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 76,
+                    "end_lineno": 10,
+                    "id": "nombre_enfants",
+                    "lineno": 10
+                  }
+                ],
+                "ast_class": "Call",
+                "col_offset": 54,
+                "end_col_offset": 77,
+                "end_lineno": 10,
+                "func": {
+                  "ast_class": "Name",
+                  "col_offset": 54,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 58,
+                  "end_lineno": 10,
+                  "id": "min_",
+                  "lineno": 10
+                },
+                "keywords": [],
+                "lineno": 10
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 93,
+            "end_lineno": 12,
+            "lineno": 12,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 27,
+                "end_lineno": 12,
+                "id": "nombre_de_parts_enfants",
+                "lineno": 12
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 30,
+              "end_col_offset": 93,
+              "end_lineno": 12,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 30,
+                "end_col_offset": 73,
+                "end_lineno": 12,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 30,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 44,
+                  "end_lineno": 12,
+                  "id": "nombre_enfants",
+                  "lineno": 12
+                },
+                "lineno": 12,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 47,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 73,
+                  "end_lineno": 12,
+                  "id": "nombre_de_parts_par_enfant",
+                  "lineno": 12
+                }
+              },
+              "lineno": 12,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 76,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 93,
+                "end_lineno": 12,
+                "id": "parts_enfant_veuf",
+                "lineno": 12
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 71,
+            "end_lineno": 13,
+            "lineno": 13,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 26,
+                "end_lineno": 13,
+                "id": "conjoint_a_des_revenus",
+                "lineno": 13
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 38,
+                  "end_col_offset": 62,
+                  "end_lineno": 13,
+                  "lineno": 13,
+                  "value": "conjoint_a_des_revenus"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 64,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 70,
+                  "end_lineno": 13,
+                  "id": "period",
+                  "lineno": 13
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 29,
+              "end_col_offset": 71,
+              "end_lineno": 13,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 29,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 37,
+                "end_lineno": 13,
+                "id": "individu",
+                "lineno": 13
+              },
+              "keywords": [],
+              "lineno": 13
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 106,
+            "end_lineno": 14,
+            "lineno": 14,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 28,
+                "end_lineno": 14,
+                "id": "nombre_de_parts_conjoint",
+                "lineno": 14
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 31,
+              "end_col_offset": 106,
+              "end_lineno": 14,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 31,
+                "end_col_offset": 69,
+                "end_lineno": 14,
+                "left": {
+                  "ast_class": "Name",
+                  "col_offset": 31,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 40,
+                  "end_lineno": 14,
+                  "id": "est_marie",
+                  "lineno": 14
+                },
+                "lineno": 14,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 43,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 69,
+                  "end_lineno": 14,
+                  "id": "repartition_marie_conjoint",
+                  "lineno": 14
+                }
+              },
+              "lineno": 14,
+              "op": {
+                "ast_class": "Mult"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 73,
+                "end_col_offset": 105,
+                "end_lineno": 14,
+                "left": {
+                  "ast_class": "Constant",
+                  "col_offset": 73,
+                  "end_col_offset": 74,
+                  "end_lineno": 14,
+                  "lineno": 14,
+                  "value": 1
+                },
+                "lineno": 14,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "args": [
+                    {
+                      "ast_class": "Name",
+                      "col_offset": 82,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 104,
+                      "end_lineno": 14,
+                      "id": "conjoint_a_des_revenus",
+                      "lineno": 14
+                    }
+                  ],
+                  "ast_class": "Call",
+                  "col_offset": 77,
+                  "end_col_offset": 105,
+                  "end_lineno": 14,
+                  "func": {
+                    "ast_class": "Name",
+                    "col_offset": 77,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 81,
+                    "end_lineno": 14,
+                    "id": "not_",
+                    "lineno": 14
+                  },
+                  "keywords": [],
+                  "lineno": 14
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 76,
+            "end_lineno": 16,
+            "lineno": 16,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 19,
+                "end_lineno": 16,
+                "id": "nombre_de_parts",
+                "lineno": 16
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 22,
+              "end_col_offset": 76,
+              "end_lineno": 16,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 22,
+                "end_col_offset": 50,
+                "end_lineno": 16,
+                "left": {
+                  "ast_class": "Constant",
+                  "col_offset": 22,
+                  "end_col_offset": 23,
+                  "end_lineno": 16,
+                  "lineno": 16,
+                  "value": 1
+                },
+                "lineno": 16,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "Name",
+                  "col_offset": 26,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 50,
+                  "end_lineno": 16,
+                  "id": "nombre_de_parts_conjoint",
+                  "lineno": 16
+                }
+              },
+              "lineno": 16,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "Name",
+                "col_offset": 53,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 76,
+                "end_lineno": 16,
+                "id": "nombre_de_parts_enfants",
+                "lineno": 16
+              }
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 56,
+            "end_lineno": 18,
+            "lineno": 18,
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Name",
+                  "col_offset": 16,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 38,
+                  "end_lineno": 18,
+                  "id": "limite_nombre_de_parts",
+                  "lineno": 18
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 40,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 55,
+                  "end_lineno": 18,
+                  "id": "nombre_de_parts",
+                  "lineno": 18
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 11,
+              "end_col_offset": 56,
+              "end_lineno": 18,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 11,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 15,
+                "end_lineno": 18,
+                "id": "min_",
+                "lineno": 18
+              },
+              "keywords": [],
+              "lineno": 18
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 56,
+        "end_lineno": 18,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_senegal/variables/prelevements_obligatoires/impots_directs.py",
+      "source_code": "def formula(individu, period, parameters):\n    nombre_de_parts_par_enfant = parameters(period).nombre_de_parts.par_enfant\n    limite_nombre_de_parts = parameters(period).nombre_de_parts.limite_max\n    repartition_marie_conjoint = parameters(period).nombre_de_parts.repartition_marie_conjoint\n    veuf_avec_enfant = parameters(period).nombre_de_parts.veuf_avec_enfant\n\n    est_marie = individu('est_marie', period)\n    est_veuf = individu('est_veuf', period)\n    nombre_enfants = individu('nombre_enfants', period)\n    parts_enfant_veuf = est_veuf * veuf_avec_enfant * min_(1, nombre_enfants)\n\n    nombre_de_parts_enfants = nombre_enfants * nombre_de_parts_par_enfant + parts_enfant_veuf\n    conjoint_a_des_revenus = individu('conjoint_a_des_revenus', period)\n    nombre_de_parts_conjoint = est_marie * repartition_marie_conjoint * (1 + not_(conjoint_a_des_revenus))\n\n    nombre_de_parts = 1 + nombre_de_parts_conjoint + nombre_de_parts_enfants\n\n    return min_(limite_nombre_de_parts, nombre_de_parts)\n",
+      "start_line_number": 17,
+      "stop_line_number": 35
+    }
+  },
+  "json_type": "number",
+  "label": "Nombre de parts",
+  "name": "nombre_de_parts",
+  "start_line_number": 11,
+  "stop_line_number": 35,
+  "value_type": "float"
+}

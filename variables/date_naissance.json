@@ -1,0 +1,14 @@
+{
+  "default_value": "1970-01-01",
+  "definition_period": "eternity",
+  "dtype": "datetime64[D]",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/caracteristiques_socio_demographiques.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Date de naissance",
+  "name": "date_naissance",
+  "start_line_number": 63,
+  "stop_line_number": 69,
+  "value_type": "date"
+}

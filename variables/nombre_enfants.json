@@ -1,0 +1,12 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "int32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/caracteristiques_socio_demographiques.py",
+  "json_type": "integer",
+  "name": "nombre_enfants",
+  "start_line_number": 57,
+  "stop_line_number": 61,
+  "value_type": "int"
+}

@@ -1,0 +1,14 @@
+{
+  "default_value": 1.0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/weights.py",
+  "is_period_size_independent": true,
+  "json_type": "number",
+  "label": "Poids de l'individ",
+  "name": "person_weight",
+  "start_line_number": 14,
+  "stop_line_number": 21,
+  "value_type": "float"
+}

@@ -1,0 +1,2454 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/prelevements_obligatoires/impots_directs.py",
+  "formulas": {
+    "0001-01-01": {
+      "ast": {
+        "args": {
+          "args": [
+            {
+              "arg": "individu",
+              "ast_class": "arg",
+              "col_offset": 12,
+              "end_col_offset": 20,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "period",
+              "ast_class": "arg",
+              "col_offset": 22,
+              "end_col_offset": 28,
+              "end_lineno": 1,
+              "lineno": 1
+            },
+            {
+              "arg": "legislation",
+              "ast_class": "arg",
+              "col_offset": 30,
+              "end_col_offset": 41,
+              "end_lineno": 1,
+              "lineno": 1
+            }
+          ],
+          "ast_class": "arguments",
+          "defaults": [],
+          "kw_defaults": [],
+          "kwonlyargs": [],
+          "posonlyargs": []
+        },
+        "ast_class": "FunctionDef",
+        "body": [
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 85,
+            "end_lineno": 2,
+            "lineno": 2,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 33,
+                "end_lineno": 2,
+                "id": "impot_avant_reduction_famille",
+                "lineno": 2
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 45,
+                  "end_col_offset": 76,
+                  "end_lineno": 2,
+                  "lineno": 2,
+                  "value": "impot_avant_reduction_famille"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 78,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 84,
+                  "end_lineno": 2,
+                  "id": "period",
+                  "lineno": 2
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 36,
+              "end_col_offset": 85,
+              "end_lineno": 2,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 36,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 44,
+                "end_lineno": 2,
+                "id": "individu",
+                "lineno": 2
+              },
+              "keywords": [],
+              "lineno": 2
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 57,
+            "end_lineno": 4,
+            "lineno": 4,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 19,
+                "end_lineno": 4,
+                "id": "nombre_de_parts",
+                "lineno": 4
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "Constant",
+                  "col_offset": 31,
+                  "end_col_offset": 48,
+                  "end_lineno": 4,
+                  "lineno": 4,
+                  "value": "nombre_de_parts"
+                },
+                {
+                  "ast_class": "Name",
+                  "col_offset": 50,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 56,
+                  "end_lineno": 4,
+                  "id": "period",
+                  "lineno": 4
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 22,
+              "end_col_offset": 57,
+              "end_lineno": 4,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 22,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 30,
+                "end_lineno": 4,
+                "id": "individu",
+                "lineno": 4
+              },
+              "keywords": [],
+              "lineno": 4
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 134,
+            "end_lineno": 5,
+            "lineno": 5,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 37,
+                "end_lineno": 5,
+                "id": "reductions_pour_charge_de_famille",
+                "lineno": 5
+              }
+            ],
+            "value": {
+              "ast_class": "Attribute",
+              "attr": "reductions_pour_charge_de_famille",
+              "col_offset": 40,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 134,
+              "end_lineno": 5,
+              "lineno": 5,
+              "value": {
+                "ast_class": "Attribute",
+                "attr": "impots_directs",
+                "col_offset": 40,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 100,
+                "end_lineno": 5,
+                "lineno": 5,
+                "value": {
+                  "ast_class": "Attribute",
+                  "attr": "prelevements_obligatoires",
+                  "col_offset": 40,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 85,
+                  "end_lineno": 5,
+                  "lineno": 5,
+                  "value": {
+                    "args": [
+                      {
+                        "ast_class": "Name",
+                        "col_offset": 52,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 58,
+                        "end_lineno": 5,
+                        "id": "period",
+                        "lineno": 5
+                      }
+                    ],
+                    "ast_class": "Call",
+                    "col_offset": 40,
+                    "end_col_offset": 59,
+                    "end_lineno": 5,
+                    "func": {
+                      "ast_class": "Name",
+                      "col_offset": 40,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 51,
+                      "end_lineno": 5,
+                      "id": "legislation",
+                      "lineno": 5
+                    },
+                    "keywords": [],
+                    "lineno": 5
+                  }
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 73,
+            "end_lineno": 15,
+            "lineno": 7,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 8,
+                "end_lineno": 7,
+                "id": "taux",
+                "lineno": 7
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 11,
+              "end_col_offset": 73,
+              "end_lineno": 15,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 11,
+                "end_col_offset": 75,
+                "end_lineno": 14,
+                "left": {
+                  "ast_class": "BinOp",
+                  "col_offset": 11,
+                  "end_col_offset": 73,
+                  "end_lineno": 13,
+                  "left": {
+                    "ast_class": "BinOp",
+                    "col_offset": 11,
+                    "end_col_offset": 75,
+                    "end_lineno": 12,
+                    "left": {
+                      "ast_class": "BinOp",
+                      "col_offset": 11,
+                      "end_col_offset": 73,
+                      "end_lineno": 11,
+                      "left": {
+                        "ast_class": "BinOp",
+                        "col_offset": 11,
+                        "end_col_offset": 75,
+                        "end_lineno": 10,
+                        "left": {
+                          "ast_class": "BinOp",
+                          "col_offset": 11,
+                          "end_col_offset": 73,
+                          "end_lineno": 9,
+                          "left": {
+                            "ast_class": "BinOp",
+                            "col_offset": 11,
+                            "end_col_offset": 75,
+                            "end_lineno": 8,
+                            "left": {
+                              "ast_class": "BinOp",
+                              "col_offset": 11,
+                              "end_col_offset": 76,
+                              "end_lineno": 7,
+                              "left": {
+                                "ast_class": "Compare",
+                                "col_offset": 12,
+                                "comparators": [
+                                  {
+                                    "ast_class": "Constant",
+                                    "col_offset": 31,
+                                    "end_col_offset": 32,
+                                    "end_lineno": 7,
+                                    "lineno": 7,
+                                    "value": 1
+                                  }
+                                ],
+                                "end_col_offset": 32,
+                                "end_lineno": 7,
+                                "left": {
+                                  "ast_class": "Name",
+                                  "col_offset": 12,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 27,
+                                  "end_lineno": 7,
+                                  "id": "nombre_de_parts",
+                                  "lineno": 7
+                                },
+                                "lineno": 7,
+                                "ops": [
+                                  {
+                                    "ast_class": "Eq"
+                                  }
+                                ]
+                              },
+                              "lineno": 7,
+                              "op": {
+                                "ast_class": "Mult"
+                              },
+                              "right": {
+                                "ast_class": "Attribute",
+                                "attr": "taux_1",
+                                "col_offset": 36,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 76,
+                                "end_lineno": 7,
+                                "lineno": 7,
+                                "value": {
+                                  "ast_class": "Name",
+                                  "col_offset": 36,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 69,
+                                  "end_lineno": 7,
+                                  "id": "reductions_pour_charge_de_famille",
+                                  "lineno": 7
+                                }
+                              }
+                            },
+                            "lineno": 7,
+                            "op": {
+                              "ast_class": "Add"
+                            },
+                            "right": {
+                              "ast_class": "BinOp",
+                              "col_offset": 8,
+                              "end_col_offset": 75,
+                              "end_lineno": 8,
+                              "left": {
+                                "ast_class": "Compare",
+                                "col_offset": 9,
+                                "comparators": [
+                                  {
+                                    "ast_class": "Constant",
+                                    "col_offset": 28,
+                                    "end_col_offset": 31,
+                                    "end_lineno": 8,
+                                    "lineno": 8,
+                                    "value": 1.5
+                                  }
+                                ],
+                                "end_col_offset": 31,
+                                "end_lineno": 8,
+                                "left": {
+                                  "ast_class": "Name",
+                                  "col_offset": 9,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 24,
+                                  "end_lineno": 8,
+                                  "id": "nombre_de_parts",
+                                  "lineno": 8
+                                },
+                                "lineno": 8,
+                                "ops": [
+                                  {
+                                    "ast_class": "Eq"
+                                  }
+                                ]
+                              },
+                              "lineno": 8,
+                              "op": {
+                                "ast_class": "Mult"
+                              },
+                              "right": {
+                                "ast_class": "Attribute",
+                                "attr": "taux_2",
+                                "col_offset": 35,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 75,
+                                "end_lineno": 8,
+                                "lineno": 8,
+                                "value": {
+                                  "ast_class": "Name",
+                                  "col_offset": 35,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 68,
+                                  "end_lineno": 8,
+                                  "id": "reductions_pour_charge_de_famille",
+                                  "lineno": 8
+                                }
+                              }
+                            }
+                          },
+                          "lineno": 7,
+                          "op": {
+                            "ast_class": "Add"
+                          },
+                          "right": {
+                            "ast_class": "BinOp",
+                            "col_offset": 8,
+                            "end_col_offset": 73,
+                            "end_lineno": 9,
+                            "left": {
+                              "ast_class": "Compare",
+                              "col_offset": 9,
+                              "comparators": [
+                                {
+                                  "ast_class": "Constant",
+                                  "col_offset": 28,
+                                  "end_col_offset": 29,
+                                  "end_lineno": 9,
+                                  "lineno": 9,
+                                  "value": 2
+                                }
+                              ],
+                              "end_col_offset": 29,
+                              "end_lineno": 9,
+                              "left": {
+                                "ast_class": "Name",
+                                "col_offset": 9,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 24,
+                                "end_lineno": 9,
+                                "id": "nombre_de_parts",
+                                "lineno": 9
+                              },
+                              "lineno": 9,
+                              "ops": [
+                                {
+                                  "ast_class": "Eq"
+                                }
+                              ]
+                            },
+                            "lineno": 9,
+                            "op": {
+                              "ast_class": "Mult"
+                            },
+                            "right": {
+                              "ast_class": "Attribute",
+                              "attr": "taux_3",
+                              "col_offset": 33,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 73,
+                              "end_lineno": 9,
+                              "lineno": 9,
+                              "value": {
+                                "ast_class": "Name",
+                                "col_offset": 33,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 66,
+                                "end_lineno": 9,
+                                "id": "reductions_pour_charge_de_famille",
+                                "lineno": 9
+                              }
+                            }
+                          }
+                        },
+                        "lineno": 7,
+                        "op": {
+                          "ast_class": "Add"
+                        },
+                        "right": {
+                          "ast_class": "BinOp",
+                          "col_offset": 8,
+                          "end_col_offset": 75,
+                          "end_lineno": 10,
+                          "left": {
+                            "ast_class": "Compare",
+                            "col_offset": 9,
+                            "comparators": [
+                              {
+                                "ast_class": "Constant",
+                                "col_offset": 28,
+                                "end_col_offset": 31,
+                                "end_lineno": 10,
+                                "lineno": 10,
+                                "value": 2.5
+                              }
+                            ],
+                            "end_col_offset": 31,
+                            "end_lineno": 10,
+                            "left": {
+                              "ast_class": "Name",
+                              "col_offset": 9,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 24,
+                              "end_lineno": 10,
+                              "id": "nombre_de_parts",
+                              "lineno": 10
+                            },
+                            "lineno": 10,
+                            "ops": [
+                              {
+                                "ast_class": "Eq"
+                              }
+                            ]
+                          },
+                          "lineno": 10,
+                          "op": {
+                            "ast_class": "Mult"
+                          },
+                          "right": {
+                            "ast_class": "Attribute",
+                            "attr": "taux_4",
+                            "col_offset": 35,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 75,
+                            "end_lineno": 10,
+                            "lineno": 10,
+                            "value": {
+                              "ast_class": "Name",
+                              "col_offset": 35,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 68,
+                              "end_lineno": 10,
+                              "id": "reductions_pour_charge_de_famille",
+                              "lineno": 10
+                            }
+                          }
+                        }
+                      },
+                      "lineno": 7,
+                      "op": {
+                        "ast_class": "Add"
+                      },
+                      "right": {
+                        "ast_class": "BinOp",
+                        "col_offset": 8,
+                        "end_col_offset": 73,
+                        "end_lineno": 11,
+                        "left": {
+                          "ast_class": "Compare",
+                          "col_offset": 9,
+                          "comparators": [
+                            {
+                              "ast_class": "Constant",
+                              "col_offset": 28,
+                              "end_col_offset": 29,
+                              "end_lineno": 11,
+                              "lineno": 11,
+                              "value": 3
+                            }
+                          ],
+                          "end_col_offset": 29,
+                          "end_lineno": 11,
+                          "left": {
+                            "ast_class": "Name",
+                            "col_offset": 9,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 24,
+                            "end_lineno": 11,
+                            "id": "nombre_de_parts",
+                            "lineno": 11
+                          },
+                          "lineno": 11,
+                          "ops": [
+                            {
+                              "ast_class": "Eq"
+                            }
+                          ]
+                        },
+                        "lineno": 11,
+                        "op": {
+                          "ast_class": "Mult"
+                        },
+                        "right": {
+                          "ast_class": "Attribute",
+                          "attr": "taux_5",
+                          "col_offset": 33,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 73,
+                          "end_lineno": 11,
+                          "lineno": 11,
+                          "value": {
+                            "ast_class": "Name",
+                            "col_offset": 33,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 66,
+                            "end_lineno": 11,
+                            "id": "reductions_pour_charge_de_famille",
+                            "lineno": 11
+                          }
+                        }
+                      }
+                    },
+                    "lineno": 7,
+                    "op": {
+                      "ast_class": "Add"
+                    },
+                    "right": {
+                      "ast_class": "BinOp",
+                      "col_offset": 8,
+                      "end_col_offset": 75,
+                      "end_lineno": 12,
+                      "left": {
+                        "ast_class": "Compare",
+                        "col_offset": 9,
+                        "comparators": [
+                          {
+                            "ast_class": "Constant",
+                            "col_offset": 28,
+                            "end_col_offset": 31,
+                            "end_lineno": 12,
+                            "lineno": 12,
+                            "value": 3.5
+                          }
+                        ],
+                        "end_col_offset": 31,
+                        "end_lineno": 12,
+                        "left": {
+                          "ast_class": "Name",
+                          "col_offset": 9,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 24,
+                          "end_lineno": 12,
+                          "id": "nombre_de_parts",
+                          "lineno": 12
+                        },
+                        "lineno": 12,
+                        "ops": [
+                          {
+                            "ast_class": "Eq"
+                          }
+                        ]
+                      },
+                      "lineno": 12,
+                      "op": {
+                        "ast_class": "Mult"
+                      },
+                      "right": {
+                        "ast_class": "Attribute",
+                        "attr": "taux_6",
+                        "col_offset": 35,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 75,
+                        "end_lineno": 12,
+                        "lineno": 12,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 35,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 68,
+                          "end_lineno": 12,
+                          "id": "reductions_pour_charge_de_famille",
+                          "lineno": 12
+                        }
+                      }
+                    }
+                  },
+                  "lineno": 7,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 73,
+                    "end_lineno": 13,
+                    "left": {
+                      "ast_class": "Compare",
+                      "col_offset": 9,
+                      "comparators": [
+                        {
+                          "ast_class": "Constant",
+                          "col_offset": 28,
+                          "end_col_offset": 29,
+                          "end_lineno": 13,
+                          "lineno": 13,
+                          "value": 4
+                        }
+                      ],
+                      "end_col_offset": 29,
+                      "end_lineno": 13,
+                      "left": {
+                        "ast_class": "Name",
+                        "col_offset": 9,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 24,
+                        "end_lineno": 13,
+                        "id": "nombre_de_parts",
+                        "lineno": 13
+                      },
+                      "lineno": 13,
+                      "ops": [
+                        {
+                          "ast_class": "Eq"
+                        }
+                      ]
+                    },
+                    "lineno": 13,
+                    "op": {
+                      "ast_class": "Mult"
+                    },
+                    "right": {
+                      "ast_class": "Attribute",
+                      "attr": "taux_7",
+                      "col_offset": 33,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 73,
+                      "end_lineno": 13,
+                      "lineno": 13,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 33,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 66,
+                        "end_lineno": 13,
+                        "id": "reductions_pour_charge_de_famille",
+                        "lineno": 13
+                      }
+                    }
+                  }
+                },
+                "lineno": 7,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "BinOp",
+                  "col_offset": 8,
+                  "end_col_offset": 75,
+                  "end_lineno": 14,
+                  "left": {
+                    "ast_class": "Compare",
+                    "col_offset": 9,
+                    "comparators": [
+                      {
+                        "ast_class": "Constant",
+                        "col_offset": 28,
+                        "end_col_offset": 31,
+                        "end_lineno": 14,
+                        "lineno": 14,
+                        "value": 4.5
+                      }
+                    ],
+                    "end_col_offset": 31,
+                    "end_lineno": 14,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 9,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 24,
+                      "end_lineno": 14,
+                      "id": "nombre_de_parts",
+                      "lineno": 14
+                    },
+                    "lineno": 14,
+                    "ops": [
+                      {
+                        "ast_class": "Eq"
+                      }
+                    ]
+                  },
+                  "lineno": 14,
+                  "op": {
+                    "ast_class": "Mult"
+                  },
+                  "right": {
+                    "ast_class": "Attribute",
+                    "attr": "taux_8",
+                    "col_offset": 35,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 75,
+                    "end_lineno": 14,
+                    "lineno": 14,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 35,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 68,
+                      "end_lineno": 14,
+                      "id": "reductions_pour_charge_de_famille",
+                      "lineno": 14
+                    }
+                  }
+                }
+              },
+              "lineno": 7,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 8,
+                "end_col_offset": 73,
+                "end_lineno": 15,
+                "left": {
+                  "ast_class": "Compare",
+                  "col_offset": 9,
+                  "comparators": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 28,
+                      "end_col_offset": 29,
+                      "end_lineno": 15,
+                      "lineno": 15,
+                      "value": 5
+                    }
+                  ],
+                  "end_col_offset": 29,
+                  "end_lineno": 15,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 9,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 24,
+                    "end_lineno": 15,
+                    "id": "nombre_de_parts",
+                    "lineno": 15
+                  },
+                  "lineno": 15,
+                  "ops": [
+                    {
+                      "ast_class": "Eq"
+                    }
+                  ]
+                },
+                "lineno": 15,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Attribute",
+                  "attr": "taux_9",
+                  "col_offset": 33,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 73,
+                  "end_lineno": 15,
+                  "lineno": 15,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 33,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 66,
+                    "end_lineno": 15,
+                    "id": "reductions_pour_charge_de_famille",
+                    "lineno": 15
+                  }
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 72,
+            "end_lineno": 24,
+            "lineno": 16,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 11,
+                "end_lineno": 16,
+                "id": "minimum",
+                "lineno": 16
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 14,
+              "end_col_offset": 72,
+              "end_lineno": 24,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 14,
+                "end_col_offset": 74,
+                "end_lineno": 23,
+                "left": {
+                  "ast_class": "BinOp",
+                  "col_offset": 14,
+                  "end_col_offset": 72,
+                  "end_lineno": 22,
+                  "left": {
+                    "ast_class": "BinOp",
+                    "col_offset": 14,
+                    "end_col_offset": 74,
+                    "end_lineno": 21,
+                    "left": {
+                      "ast_class": "BinOp",
+                      "col_offset": 14,
+                      "end_col_offset": 72,
+                      "end_lineno": 20,
+                      "left": {
+                        "ast_class": "BinOp",
+                        "col_offset": 14,
+                        "end_col_offset": 74,
+                        "end_lineno": 19,
+                        "left": {
+                          "ast_class": "BinOp",
+                          "col_offset": 14,
+                          "end_col_offset": 72,
+                          "end_lineno": 18,
+                          "left": {
+                            "ast_class": "BinOp",
+                            "col_offset": 14,
+                            "end_col_offset": 74,
+                            "end_lineno": 17,
+                            "left": {
+                              "ast_class": "BinOp",
+                              "col_offset": 14,
+                              "end_col_offset": 78,
+                              "end_lineno": 16,
+                              "left": {
+                                "ast_class": "Compare",
+                                "col_offset": 15,
+                                "comparators": [
+                                  {
+                                    "ast_class": "Constant",
+                                    "col_offset": 34,
+                                    "end_col_offset": 35,
+                                    "end_lineno": 16,
+                                    "lineno": 16,
+                                    "value": 1
+                                  }
+                                ],
+                                "end_col_offset": 35,
+                                "end_lineno": 16,
+                                "left": {
+                                  "ast_class": "Name",
+                                  "col_offset": 15,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 30,
+                                  "end_lineno": 16,
+                                  "id": "nombre_de_parts",
+                                  "lineno": 16
+                                },
+                                "lineno": 16,
+                                "ops": [
+                                  {
+                                    "ast_class": "Eq"
+                                  }
+                                ]
+                              },
+                              "lineno": 16,
+                              "op": {
+                                "ast_class": "Mult"
+                              },
+                              "right": {
+                                "ast_class": "Attribute",
+                                "attr": "min_1",
+                                "col_offset": 39,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 78,
+                                "end_lineno": 16,
+                                "lineno": 16,
+                                "value": {
+                                  "ast_class": "Name",
+                                  "col_offset": 39,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 72,
+                                  "end_lineno": 16,
+                                  "id": "reductions_pour_charge_de_famille",
+                                  "lineno": 16
+                                }
+                              }
+                            },
+                            "lineno": 16,
+                            "op": {
+                              "ast_class": "Add"
+                            },
+                            "right": {
+                              "ast_class": "BinOp",
+                              "col_offset": 8,
+                              "end_col_offset": 74,
+                              "end_lineno": 17,
+                              "left": {
+                                "ast_class": "Compare",
+                                "col_offset": 9,
+                                "comparators": [
+                                  {
+                                    "ast_class": "Constant",
+                                    "col_offset": 28,
+                                    "end_col_offset": 31,
+                                    "end_lineno": 17,
+                                    "lineno": 17,
+                                    "value": 1.5
+                                  }
+                                ],
+                                "end_col_offset": 31,
+                                "end_lineno": 17,
+                                "left": {
+                                  "ast_class": "Name",
+                                  "col_offset": 9,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 24,
+                                  "end_lineno": 17,
+                                  "id": "nombre_de_parts",
+                                  "lineno": 17
+                                },
+                                "lineno": 17,
+                                "ops": [
+                                  {
+                                    "ast_class": "Eq"
+                                  }
+                                ]
+                              },
+                              "lineno": 17,
+                              "op": {
+                                "ast_class": "Mult"
+                              },
+                              "right": {
+                                "ast_class": "Attribute",
+                                "attr": "min_2",
+                                "col_offset": 35,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 74,
+                                "end_lineno": 17,
+                                "lineno": 17,
+                                "value": {
+                                  "ast_class": "Name",
+                                  "col_offset": 35,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 68,
+                                  "end_lineno": 17,
+                                  "id": "reductions_pour_charge_de_famille",
+                                  "lineno": 17
+                                }
+                              }
+                            }
+                          },
+                          "lineno": 16,
+                          "op": {
+                            "ast_class": "Add"
+                          },
+                          "right": {
+                            "ast_class": "BinOp",
+                            "col_offset": 8,
+                            "end_col_offset": 72,
+                            "end_lineno": 18,
+                            "left": {
+                              "ast_class": "Compare",
+                              "col_offset": 9,
+                              "comparators": [
+                                {
+                                  "ast_class": "Constant",
+                                  "col_offset": 28,
+                                  "end_col_offset": 29,
+                                  "end_lineno": 18,
+                                  "lineno": 18,
+                                  "value": 2
+                                }
+                              ],
+                              "end_col_offset": 29,
+                              "end_lineno": 18,
+                              "left": {
+                                "ast_class": "Name",
+                                "col_offset": 9,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 24,
+                                "end_lineno": 18,
+                                "id": "nombre_de_parts",
+                                "lineno": 18
+                              },
+                              "lineno": 18,
+                              "ops": [
+                                {
+                                  "ast_class": "Eq"
+                                }
+                              ]
+                            },
+                            "lineno": 18,
+                            "op": {
+                              "ast_class": "Mult"
+                            },
+                            "right": {
+                              "ast_class": "Attribute",
+                              "attr": "min_3",
+                              "col_offset": 33,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 72,
+                              "end_lineno": 18,
+                              "lineno": 18,
+                              "value": {
+                                "ast_class": "Name",
+                                "col_offset": 33,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 66,
+                                "end_lineno": 18,
+                                "id": "reductions_pour_charge_de_famille",
+                                "lineno": 18
+                              }
+                            }
+                          }
+                        },
+                        "lineno": 16,
+                        "op": {
+                          "ast_class": "Add"
+                        },
+                        "right": {
+                          "ast_class": "BinOp",
+                          "col_offset": 8,
+                          "end_col_offset": 74,
+                          "end_lineno": 19,
+                          "left": {
+                            "ast_class": "Compare",
+                            "col_offset": 9,
+                            "comparators": [
+                              {
+                                "ast_class": "Constant",
+                                "col_offset": 28,
+                                "end_col_offset": 31,
+                                "end_lineno": 19,
+                                "lineno": 19,
+                                "value": 2.5
+                              }
+                            ],
+                            "end_col_offset": 31,
+                            "end_lineno": 19,
+                            "left": {
+                              "ast_class": "Name",
+                              "col_offset": 9,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 24,
+                              "end_lineno": 19,
+                              "id": "nombre_de_parts",
+                              "lineno": 19
+                            },
+                            "lineno": 19,
+                            "ops": [
+                              {
+                                "ast_class": "Eq"
+                              }
+                            ]
+                          },
+                          "lineno": 19,
+                          "op": {
+                            "ast_class": "Mult"
+                          },
+                          "right": {
+                            "ast_class": "Attribute",
+                            "attr": "min_4",
+                            "col_offset": 35,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 74,
+                            "end_lineno": 19,
+                            "lineno": 19,
+                            "value": {
+                              "ast_class": "Name",
+                              "col_offset": 35,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 68,
+                              "end_lineno": 19,
+                              "id": "reductions_pour_charge_de_famille",
+                              "lineno": 19
+                            }
+                          }
+                        }
+                      },
+                      "lineno": 16,
+                      "op": {
+                        "ast_class": "Add"
+                      },
+                      "right": {
+                        "ast_class": "BinOp",
+                        "col_offset": 8,
+                        "end_col_offset": 72,
+                        "end_lineno": 20,
+                        "left": {
+                          "ast_class": "Compare",
+                          "col_offset": 9,
+                          "comparators": [
+                            {
+                              "ast_class": "Constant",
+                              "col_offset": 28,
+                              "end_col_offset": 29,
+                              "end_lineno": 20,
+                              "lineno": 20,
+                              "value": 3
+                            }
+                          ],
+                          "end_col_offset": 29,
+                          "end_lineno": 20,
+                          "left": {
+                            "ast_class": "Name",
+                            "col_offset": 9,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 24,
+                            "end_lineno": 20,
+                            "id": "nombre_de_parts",
+                            "lineno": 20
+                          },
+                          "lineno": 20,
+                          "ops": [
+                            {
+                              "ast_class": "Eq"
+                            }
+                          ]
+                        },
+                        "lineno": 20,
+                        "op": {
+                          "ast_class": "Mult"
+                        },
+                        "right": {
+                          "ast_class": "Attribute",
+                          "attr": "min_5",
+                          "col_offset": 33,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 72,
+                          "end_lineno": 20,
+                          "lineno": 20,
+                          "value": {
+                            "ast_class": "Name",
+                            "col_offset": 33,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 66,
+                            "end_lineno": 20,
+                            "id": "reductions_pour_charge_de_famille",
+                            "lineno": 20
+                          }
+                        }
+                      }
+                    },
+                    "lineno": 16,
+                    "op": {
+                      "ast_class": "Add"
+                    },
+                    "right": {
+                      "ast_class": "BinOp",
+                      "col_offset": 8,
+                      "end_col_offset": 74,
+                      "end_lineno": 21,
+                      "left": {
+                        "ast_class": "Compare",
+                        "col_offset": 9,
+                        "comparators": [
+                          {
+                            "ast_class": "Constant",
+                            "col_offset": 28,
+                            "end_col_offset": 31,
+                            "end_lineno": 21,
+                            "lineno": 21,
+                            "value": 3.5
+                          }
+                        ],
+                        "end_col_offset": 31,
+                        "end_lineno": 21,
+                        "left": {
+                          "ast_class": "Name",
+                          "col_offset": 9,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 24,
+                          "end_lineno": 21,
+                          "id": "nombre_de_parts",
+                          "lineno": 21
+                        },
+                        "lineno": 21,
+                        "ops": [
+                          {
+                            "ast_class": "Eq"
+                          }
+                        ]
+                      },
+                      "lineno": 21,
+                      "op": {
+                        "ast_class": "Mult"
+                      },
+                      "right": {
+                        "ast_class": "Attribute",
+                        "attr": "min_6",
+                        "col_offset": 35,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 74,
+                        "end_lineno": 21,
+                        "lineno": 21,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 35,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 68,
+                          "end_lineno": 21,
+                          "id": "reductions_pour_charge_de_famille",
+                          "lineno": 21
+                        }
+                      }
+                    }
+                  },
+                  "lineno": 16,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 72,
+                    "end_lineno": 22,
+                    "left": {
+                      "ast_class": "Compare",
+                      "col_offset": 9,
+                      "comparators": [
+                        {
+                          "ast_class": "Constant",
+                          "col_offset": 28,
+                          "end_col_offset": 29,
+                          "end_lineno": 22,
+                          "lineno": 22,
+                          "value": 4
+                        }
+                      ],
+                      "end_col_offset": 29,
+                      "end_lineno": 22,
+                      "left": {
+                        "ast_class": "Name",
+                        "col_offset": 9,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 24,
+                        "end_lineno": 22,
+                        "id": "nombre_de_parts",
+                        "lineno": 22
+                      },
+                      "lineno": 22,
+                      "ops": [
+                        {
+                          "ast_class": "Eq"
+                        }
+                      ]
+                    },
+                    "lineno": 22,
+                    "op": {
+                      "ast_class": "Mult"
+                    },
+                    "right": {
+                      "ast_class": "Attribute",
+                      "attr": "min_7",
+                      "col_offset": 33,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 72,
+                      "end_lineno": 22,
+                      "lineno": 22,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 33,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 66,
+                        "end_lineno": 22,
+                        "id": "reductions_pour_charge_de_famille",
+                        "lineno": 22
+                      }
+                    }
+                  }
+                },
+                "lineno": 16,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "BinOp",
+                  "col_offset": 8,
+                  "end_col_offset": 74,
+                  "end_lineno": 23,
+                  "left": {
+                    "ast_class": "Compare",
+                    "col_offset": 9,
+                    "comparators": [
+                      {
+                        "ast_class": "Constant",
+                        "col_offset": 28,
+                        "end_col_offset": 31,
+                        "end_lineno": 23,
+                        "lineno": 23,
+                        "value": 4.5
+                      }
+                    ],
+                    "end_col_offset": 31,
+                    "end_lineno": 23,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 9,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 24,
+                      "end_lineno": 23,
+                      "id": "nombre_de_parts",
+                      "lineno": 23
+                    },
+                    "lineno": 23,
+                    "ops": [
+                      {
+                        "ast_class": "Eq"
+                      }
+                    ]
+                  },
+                  "lineno": 23,
+                  "op": {
+                    "ast_class": "Mult"
+                  },
+                  "right": {
+                    "ast_class": "Attribute",
+                    "attr": "min_8",
+                    "col_offset": 35,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 74,
+                    "end_lineno": 23,
+                    "lineno": 23,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 35,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 68,
+                      "end_lineno": 23,
+                      "id": "reductions_pour_charge_de_famille",
+                      "lineno": 23
+                    }
+                  }
+                }
+              },
+              "lineno": 16,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 8,
+                "end_col_offset": 72,
+                "end_lineno": 24,
+                "left": {
+                  "ast_class": "Compare",
+                  "col_offset": 9,
+                  "comparators": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 28,
+                      "end_col_offset": 29,
+                      "end_lineno": 24,
+                      "lineno": 24,
+                      "value": 5
+                    }
+                  ],
+                  "end_col_offset": 29,
+                  "end_lineno": 24,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 9,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 24,
+                    "end_lineno": 24,
+                    "id": "nombre_de_parts",
+                    "lineno": 24
+                  },
+                  "lineno": 24,
+                  "ops": [
+                    {
+                      "ast_class": "Eq"
+                    }
+                  ]
+                },
+                "lineno": 24,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Attribute",
+                  "attr": "min_9",
+                  "col_offset": 33,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 72,
+                  "end_lineno": 24,
+                  "lineno": 24,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 33,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 66,
+                    "end_lineno": 24,
+                    "id": "reductions_pour_charge_de_famille",
+                    "lineno": 24
+                  }
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 72,
+            "end_lineno": 33,
+            "lineno": 25,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 11,
+                "end_lineno": 25,
+                "id": "maximum",
+                "lineno": 25
+              }
+            ],
+            "value": {
+              "ast_class": "BinOp",
+              "col_offset": 14,
+              "end_col_offset": 72,
+              "end_lineno": 33,
+              "left": {
+                "ast_class": "BinOp",
+                "col_offset": 14,
+                "end_col_offset": 74,
+                "end_lineno": 32,
+                "left": {
+                  "ast_class": "BinOp",
+                  "col_offset": 14,
+                  "end_col_offset": 72,
+                  "end_lineno": 31,
+                  "left": {
+                    "ast_class": "BinOp",
+                    "col_offset": 14,
+                    "end_col_offset": 74,
+                    "end_lineno": 30,
+                    "left": {
+                      "ast_class": "BinOp",
+                      "col_offset": 14,
+                      "end_col_offset": 72,
+                      "end_lineno": 29,
+                      "left": {
+                        "ast_class": "BinOp",
+                        "col_offset": 14,
+                        "end_col_offset": 74,
+                        "end_lineno": 28,
+                        "left": {
+                          "ast_class": "BinOp",
+                          "col_offset": 14,
+                          "end_col_offset": 72,
+                          "end_lineno": 27,
+                          "left": {
+                            "ast_class": "BinOp",
+                            "col_offset": 14,
+                            "end_col_offset": 74,
+                            "end_lineno": 26,
+                            "left": {
+                              "ast_class": "BinOp",
+                              "col_offset": 14,
+                              "end_col_offset": 78,
+                              "end_lineno": 25,
+                              "left": {
+                                "ast_class": "Compare",
+                                "col_offset": 15,
+                                "comparators": [
+                                  {
+                                    "ast_class": "Constant",
+                                    "col_offset": 34,
+                                    "end_col_offset": 35,
+                                    "end_lineno": 25,
+                                    "lineno": 25,
+                                    "value": 1
+                                  }
+                                ],
+                                "end_col_offset": 35,
+                                "end_lineno": 25,
+                                "left": {
+                                  "ast_class": "Name",
+                                  "col_offset": 15,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 30,
+                                  "end_lineno": 25,
+                                  "id": "nombre_de_parts",
+                                  "lineno": 25
+                                },
+                                "lineno": 25,
+                                "ops": [
+                                  {
+                                    "ast_class": "Eq"
+                                  }
+                                ]
+                              },
+                              "lineno": 25,
+                              "op": {
+                                "ast_class": "Mult"
+                              },
+                              "right": {
+                                "ast_class": "Attribute",
+                                "attr": "max_1",
+                                "col_offset": 39,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 78,
+                                "end_lineno": 25,
+                                "lineno": 25,
+                                "value": {
+                                  "ast_class": "Name",
+                                  "col_offset": 39,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 72,
+                                  "end_lineno": 25,
+                                  "id": "reductions_pour_charge_de_famille",
+                                  "lineno": 25
+                                }
+                              }
+                            },
+                            "lineno": 25,
+                            "op": {
+                              "ast_class": "Add"
+                            },
+                            "right": {
+                              "ast_class": "BinOp",
+                              "col_offset": 8,
+                              "end_col_offset": 74,
+                              "end_lineno": 26,
+                              "left": {
+                                "ast_class": "Compare",
+                                "col_offset": 9,
+                                "comparators": [
+                                  {
+                                    "ast_class": "Constant",
+                                    "col_offset": 28,
+                                    "end_col_offset": 31,
+                                    "end_lineno": 26,
+                                    "lineno": 26,
+                                    "value": 1.5
+                                  }
+                                ],
+                                "end_col_offset": 31,
+                                "end_lineno": 26,
+                                "left": {
+                                  "ast_class": "Name",
+                                  "col_offset": 9,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 24,
+                                  "end_lineno": 26,
+                                  "id": "nombre_de_parts",
+                                  "lineno": 26
+                                },
+                                "lineno": 26,
+                                "ops": [
+                                  {
+                                    "ast_class": "Eq"
+                                  }
+                                ]
+                              },
+                              "lineno": 26,
+                              "op": {
+                                "ast_class": "Mult"
+                              },
+                              "right": {
+                                "ast_class": "Attribute",
+                                "attr": "max_2",
+                                "col_offset": 35,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 74,
+                                "end_lineno": 26,
+                                "lineno": 26,
+                                "value": {
+                                  "ast_class": "Name",
+                                  "col_offset": 35,
+                                  "ctx": {
+                                    "ast_class": "Load"
+                                  },
+                                  "end_col_offset": 68,
+                                  "end_lineno": 26,
+                                  "id": "reductions_pour_charge_de_famille",
+                                  "lineno": 26
+                                }
+                              }
+                            }
+                          },
+                          "lineno": 25,
+                          "op": {
+                            "ast_class": "Add"
+                          },
+                          "right": {
+                            "ast_class": "BinOp",
+                            "col_offset": 8,
+                            "end_col_offset": 72,
+                            "end_lineno": 27,
+                            "left": {
+                              "ast_class": "Compare",
+                              "col_offset": 9,
+                              "comparators": [
+                                {
+                                  "ast_class": "Constant",
+                                  "col_offset": 28,
+                                  "end_col_offset": 29,
+                                  "end_lineno": 27,
+                                  "lineno": 27,
+                                  "value": 2
+                                }
+                              ],
+                              "end_col_offset": 29,
+                              "end_lineno": 27,
+                              "left": {
+                                "ast_class": "Name",
+                                "col_offset": 9,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 24,
+                                "end_lineno": 27,
+                                "id": "nombre_de_parts",
+                                "lineno": 27
+                              },
+                              "lineno": 27,
+                              "ops": [
+                                {
+                                  "ast_class": "Eq"
+                                }
+                              ]
+                            },
+                            "lineno": 27,
+                            "op": {
+                              "ast_class": "Mult"
+                            },
+                            "right": {
+                              "ast_class": "Attribute",
+                              "attr": "max_3",
+                              "col_offset": 33,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 72,
+                              "end_lineno": 27,
+                              "lineno": 27,
+                              "value": {
+                                "ast_class": "Name",
+                                "col_offset": 33,
+                                "ctx": {
+                                  "ast_class": "Load"
+                                },
+                                "end_col_offset": 66,
+                                "end_lineno": 27,
+                                "id": "reductions_pour_charge_de_famille",
+                                "lineno": 27
+                              }
+                            }
+                          }
+                        },
+                        "lineno": 25,
+                        "op": {
+                          "ast_class": "Add"
+                        },
+                        "right": {
+                          "ast_class": "BinOp",
+                          "col_offset": 8,
+                          "end_col_offset": 74,
+                          "end_lineno": 28,
+                          "left": {
+                            "ast_class": "Compare",
+                            "col_offset": 9,
+                            "comparators": [
+                              {
+                                "ast_class": "Constant",
+                                "col_offset": 28,
+                                "end_col_offset": 31,
+                                "end_lineno": 28,
+                                "lineno": 28,
+                                "value": 2.5
+                              }
+                            ],
+                            "end_col_offset": 31,
+                            "end_lineno": 28,
+                            "left": {
+                              "ast_class": "Name",
+                              "col_offset": 9,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 24,
+                              "end_lineno": 28,
+                              "id": "nombre_de_parts",
+                              "lineno": 28
+                            },
+                            "lineno": 28,
+                            "ops": [
+                              {
+                                "ast_class": "Eq"
+                              }
+                            ]
+                          },
+                          "lineno": 28,
+                          "op": {
+                            "ast_class": "Mult"
+                          },
+                          "right": {
+                            "ast_class": "Attribute",
+                            "attr": "max_4",
+                            "col_offset": 35,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 74,
+                            "end_lineno": 28,
+                            "lineno": 28,
+                            "value": {
+                              "ast_class": "Name",
+                              "col_offset": 35,
+                              "ctx": {
+                                "ast_class": "Load"
+                              },
+                              "end_col_offset": 68,
+                              "end_lineno": 28,
+                              "id": "reductions_pour_charge_de_famille",
+                              "lineno": 28
+                            }
+                          }
+                        }
+                      },
+                      "lineno": 25,
+                      "op": {
+                        "ast_class": "Add"
+                      },
+                      "right": {
+                        "ast_class": "BinOp",
+                        "col_offset": 8,
+                        "end_col_offset": 72,
+                        "end_lineno": 29,
+                        "left": {
+                          "ast_class": "Compare",
+                          "col_offset": 9,
+                          "comparators": [
+                            {
+                              "ast_class": "Constant",
+                              "col_offset": 28,
+                              "end_col_offset": 29,
+                              "end_lineno": 29,
+                              "lineno": 29,
+                              "value": 3
+                            }
+                          ],
+                          "end_col_offset": 29,
+                          "end_lineno": 29,
+                          "left": {
+                            "ast_class": "Name",
+                            "col_offset": 9,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 24,
+                            "end_lineno": 29,
+                            "id": "nombre_de_parts",
+                            "lineno": 29
+                          },
+                          "lineno": 29,
+                          "ops": [
+                            {
+                              "ast_class": "Eq"
+                            }
+                          ]
+                        },
+                        "lineno": 29,
+                        "op": {
+                          "ast_class": "Mult"
+                        },
+                        "right": {
+                          "ast_class": "Attribute",
+                          "attr": "max_5",
+                          "col_offset": 33,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 72,
+                          "end_lineno": 29,
+                          "lineno": 29,
+                          "value": {
+                            "ast_class": "Name",
+                            "col_offset": 33,
+                            "ctx": {
+                              "ast_class": "Load"
+                            },
+                            "end_col_offset": 66,
+                            "end_lineno": 29,
+                            "id": "reductions_pour_charge_de_famille",
+                            "lineno": 29
+                          }
+                        }
+                      }
+                    },
+                    "lineno": 25,
+                    "op": {
+                      "ast_class": "Add"
+                    },
+                    "right": {
+                      "ast_class": "BinOp",
+                      "col_offset": 8,
+                      "end_col_offset": 74,
+                      "end_lineno": 30,
+                      "left": {
+                        "ast_class": "Compare",
+                        "col_offset": 9,
+                        "comparators": [
+                          {
+                            "ast_class": "Constant",
+                            "col_offset": 28,
+                            "end_col_offset": 31,
+                            "end_lineno": 30,
+                            "lineno": 30,
+                            "value": 3.5
+                          }
+                        ],
+                        "end_col_offset": 31,
+                        "end_lineno": 30,
+                        "left": {
+                          "ast_class": "Name",
+                          "col_offset": 9,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 24,
+                          "end_lineno": 30,
+                          "id": "nombre_de_parts",
+                          "lineno": 30
+                        },
+                        "lineno": 30,
+                        "ops": [
+                          {
+                            "ast_class": "Eq"
+                          }
+                        ]
+                      },
+                      "lineno": 30,
+                      "op": {
+                        "ast_class": "Mult"
+                      },
+                      "right": {
+                        "ast_class": "Attribute",
+                        "attr": "max_6",
+                        "col_offset": 35,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 74,
+                        "end_lineno": 30,
+                        "lineno": 30,
+                        "value": {
+                          "ast_class": "Name",
+                          "col_offset": 35,
+                          "ctx": {
+                            "ast_class": "Load"
+                          },
+                          "end_col_offset": 68,
+                          "end_lineno": 30,
+                          "id": "reductions_pour_charge_de_famille",
+                          "lineno": 30
+                        }
+                      }
+                    }
+                  },
+                  "lineno": 25,
+                  "op": {
+                    "ast_class": "Add"
+                  },
+                  "right": {
+                    "ast_class": "BinOp",
+                    "col_offset": 8,
+                    "end_col_offset": 72,
+                    "end_lineno": 31,
+                    "left": {
+                      "ast_class": "Compare",
+                      "col_offset": 9,
+                      "comparators": [
+                        {
+                          "ast_class": "Constant",
+                          "col_offset": 28,
+                          "end_col_offset": 29,
+                          "end_lineno": 31,
+                          "lineno": 31,
+                          "value": 4
+                        }
+                      ],
+                      "end_col_offset": 29,
+                      "end_lineno": 31,
+                      "left": {
+                        "ast_class": "Name",
+                        "col_offset": 9,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 24,
+                        "end_lineno": 31,
+                        "id": "nombre_de_parts",
+                        "lineno": 31
+                      },
+                      "lineno": 31,
+                      "ops": [
+                        {
+                          "ast_class": "Eq"
+                        }
+                      ]
+                    },
+                    "lineno": 31,
+                    "op": {
+                      "ast_class": "Mult"
+                    },
+                    "right": {
+                      "ast_class": "Attribute",
+                      "attr": "max_7",
+                      "col_offset": 33,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 72,
+                      "end_lineno": 31,
+                      "lineno": 31,
+                      "value": {
+                        "ast_class": "Name",
+                        "col_offset": 33,
+                        "ctx": {
+                          "ast_class": "Load"
+                        },
+                        "end_col_offset": 66,
+                        "end_lineno": 31,
+                        "id": "reductions_pour_charge_de_famille",
+                        "lineno": 31
+                      }
+                    }
+                  }
+                },
+                "lineno": 25,
+                "op": {
+                  "ast_class": "Add"
+                },
+                "right": {
+                  "ast_class": "BinOp",
+                  "col_offset": 8,
+                  "end_col_offset": 74,
+                  "end_lineno": 32,
+                  "left": {
+                    "ast_class": "Compare",
+                    "col_offset": 9,
+                    "comparators": [
+                      {
+                        "ast_class": "Constant",
+                        "col_offset": 28,
+                        "end_col_offset": 31,
+                        "end_lineno": 32,
+                        "lineno": 32,
+                        "value": 4.5
+                      }
+                    ],
+                    "end_col_offset": 31,
+                    "end_lineno": 32,
+                    "left": {
+                      "ast_class": "Name",
+                      "col_offset": 9,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 24,
+                      "end_lineno": 32,
+                      "id": "nombre_de_parts",
+                      "lineno": 32
+                    },
+                    "lineno": 32,
+                    "ops": [
+                      {
+                        "ast_class": "Eq"
+                      }
+                    ]
+                  },
+                  "lineno": 32,
+                  "op": {
+                    "ast_class": "Mult"
+                  },
+                  "right": {
+                    "ast_class": "Attribute",
+                    "attr": "max_8",
+                    "col_offset": 35,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 74,
+                    "end_lineno": 32,
+                    "lineno": 32,
+                    "value": {
+                      "ast_class": "Name",
+                      "col_offset": 35,
+                      "ctx": {
+                        "ast_class": "Load"
+                      },
+                      "end_col_offset": 68,
+                      "end_lineno": 32,
+                      "id": "reductions_pour_charge_de_famille",
+                      "lineno": 32
+                    }
+                  }
+                }
+              },
+              "lineno": 25,
+              "op": {
+                "ast_class": "Add"
+              },
+              "right": {
+                "ast_class": "BinOp",
+                "col_offset": 8,
+                "end_col_offset": 72,
+                "end_lineno": 33,
+                "left": {
+                  "ast_class": "Compare",
+                  "col_offset": 9,
+                  "comparators": [
+                    {
+                      "ast_class": "Constant",
+                      "col_offset": 28,
+                      "end_col_offset": 29,
+                      "end_lineno": 33,
+                      "lineno": 33,
+                      "value": 5
+                    }
+                  ],
+                  "end_col_offset": 29,
+                  "end_lineno": 33,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 9,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 24,
+                    "end_lineno": 33,
+                    "id": "nombre_de_parts",
+                    "lineno": 33
+                  },
+                  "lineno": 33,
+                  "ops": [
+                    {
+                      "ast_class": "Eq"
+                    }
+                  ]
+                },
+                "lineno": 33,
+                "op": {
+                  "ast_class": "Mult"
+                },
+                "right": {
+                  "ast_class": "Attribute",
+                  "attr": "max_9",
+                  "col_offset": 33,
+                  "ctx": {
+                    "ast_class": "Load"
+                  },
+                  "end_col_offset": 72,
+                  "end_lineno": 33,
+                  "lineno": 33,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 33,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 66,
+                    "end_lineno": 33,
+                    "id": "reductions_pour_charge_de_famille",
+                    "lineno": 33
+                  }
+                }
+              }
+            }
+          },
+          {
+            "ast_class": "Assign",
+            "col_offset": 4,
+            "end_col_offset": 98,
+            "end_lineno": 35,
+            "lineno": 35,
+            "targets": [
+              {
+                "ast_class": "Name",
+                "col_offset": 4,
+                "ctx": {
+                  "ast_class": "Store"
+                },
+                "end_col_offset": 19,
+                "end_lineno": 35,
+                "id": "reduction_impot",
+                "lineno": 35
+              }
+            ],
+            "value": {
+              "args": [
+                {
+                  "ast_class": "BinOp",
+                  "col_offset": 27,
+                  "end_col_offset": 63,
+                  "end_lineno": 35,
+                  "left": {
+                    "ast_class": "Name",
+                    "col_offset": 27,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 56,
+                    "end_lineno": 35,
+                    "id": "impot_avant_reduction_famille",
+                    "lineno": 35
+                  },
+                  "lineno": 35,
+                  "op": {
+                    "ast_class": "Mult"
+                  },
+                  "right": {
+                    "ast_class": "Name",
+                    "col_offset": 59,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 63,
+                    "end_lineno": 35,
+                    "id": "taux",
+                    "lineno": 35
+                  }
+                }
+              ],
+              "ast_class": "Call",
+              "col_offset": 22,
+              "end_col_offset": 98,
+              "end_lineno": 35,
+              "func": {
+                "ast_class": "Name",
+                "col_offset": 22,
+                "ctx": {
+                  "ast_class": "Load"
+                },
+                "end_col_offset": 26,
+                "end_lineno": 35,
+                "id": "clip",
+                "lineno": 35
+              },
+              "keywords": [
+                {
+                  "arg": "a_min",
+                  "ast_class": "keyword",
+                  "col_offset": 65,
+                  "end_col_offset": 80,
+                  "end_lineno": 35,
+                  "lineno": 35,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 73,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 80,
+                    "end_lineno": 35,
+                    "id": "minimum",
+                    "lineno": 35
+                  }
+                },
+                {
+                  "arg": "a_max",
+                  "ast_class": "keyword",
+                  "col_offset": 82,
+                  "end_col_offset": 97,
+                  "end_lineno": 35,
+                  "lineno": 35,
+                  "value": {
+                    "ast_class": "Name",
+                    "col_offset": 90,
+                    "ctx": {
+                      "ast_class": "Load"
+                    },
+                    "end_col_offset": 97,
+                    "end_lineno": 35,
+                    "id": "maximum",
+                    "lineno": 35
+                  }
+                }
+              ],
+              "lineno": 35
+            }
+          },
+          {
+            "ast_class": "Return",
+            "col_offset": 4,
+            "end_col_offset": 26,
+            "end_lineno": 36,
+            "lineno": 36,
+            "value": {
+              "ast_class": "Name",
+              "col_offset": 11,
+              "ctx": {
+                "ast_class": "Load"
+              },
+              "end_col_offset": 26,
+              "end_lineno": 36,
+              "id": "reduction_impot",
+              "lineno": 36
+            }
+          }
+        ],
+        "col_offset": 0,
+        "decorator_list": [],
+        "end_col_offset": 26,
+        "end_lineno": 36,
+        "lineno": 1,
+        "name": "formula"
+      },
+      "file_path": "/openfisca_senegal/variables/prelevements_obligatoires/impots_directs.py",
+      "source_code": "def formula(individu, period, legislation):\n    impot_avant_reduction_famille = individu('impot_avant_reduction_famille', period)\n\n    nombre_de_parts = individu('nombre_de_parts', period)\n    reductions_pour_charge_de_famille = legislation(period).prelevements_obligatoires.impots_directs.reductions_pour_charge_de_famille\n\n    taux = (nombre_de_parts == 1) * reductions_pour_charge_de_famille.taux_1 + \\\n        (nombre_de_parts == 1.5) * reductions_pour_charge_de_famille.taux_2 + \\\n        (nombre_de_parts == 2) * reductions_pour_charge_de_famille.taux_3 + \\\n        (nombre_de_parts == 2.5) * reductions_pour_charge_de_famille.taux_4 + \\\n        (nombre_de_parts == 3) * reductions_pour_charge_de_famille.taux_5 + \\\n        (nombre_de_parts == 3.5) * reductions_pour_charge_de_famille.taux_6 + \\\n        (nombre_de_parts == 4) * reductions_pour_charge_de_famille.taux_7 + \\\n        (nombre_de_parts == 4.5) * reductions_pour_charge_de_famille.taux_8 + \\\n        (nombre_de_parts == 5) * reductions_pour_charge_de_famille.taux_9\n    minimum = (nombre_de_parts == 1) * reductions_pour_charge_de_famille.min_1 + \\\n        (nombre_de_parts == 1.5) * reductions_pour_charge_de_famille.min_2 + \\\n        (nombre_de_parts == 2) * reductions_pour_charge_de_famille.min_3 + \\\n        (nombre_de_parts == 2.5) * reductions_pour_charge_de_famille.min_4 + \\\n        (nombre_de_parts == 3) * reductions_pour_charge_de_famille.min_5 + \\\n        (nombre_de_parts == 3.5) * reductions_pour_charge_de_famille.min_6 + \\\n        (nombre_de_parts == 4) * reductions_pour_charge_de_famille.min_7 + \\\n        (nombre_de_parts == 4.5) * reductions_pour_charge_de_famille.min_8 + \\\n        (nombre_de_parts == 5) * reductions_pour_charge_de_famille.min_9\n    maximum = (nombre_de_parts == 1) * reductions_pour_charge_de_famille.max_1 + \\\n        (nombre_de_parts == 1.5) * reductions_pour_charge_de_famille.max_2 + \\\n        (nombre_de_parts == 2) * reductions_pour_charge_de_famille.max_3 + \\\n        (nombre_de_parts == 2.5) * reductions_pour_charge_de_famille.max_4 + \\\n        (nombre_de_parts == 3) * reductions_pour_charge_de_famille.max_5 + \\\n        (nombre_de_parts == 3.5) * reductions_pour_charge_de_famille.max_6 + \\\n        (nombre_de_parts == 4) * reductions_pour_charge_de_famille.max_7 + \\\n        (nombre_de_parts == 4.5) * reductions_pour_charge_de_famille.max_8 + \\\n        (nombre_de_parts == 5) * reductions_pour_charge_de_famille.max_9\n\n    reduction_impot = clip(impot_avant_reduction_famille * taux, a_min = minimum, a_max = maximum)\n    return reduction_impot\n",
+      "start_line_number": 66,
+      "stop_line_number": 102
+    }
+  },
+  "json_type": "number",
+  "name": "reduction_impots_pour_charge_famille",
+  "start_line_number": 61,
+  "stop_line_number": 102,
+  "value_type": "float"
+}

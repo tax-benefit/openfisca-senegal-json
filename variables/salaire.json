@@ -1,0 +1,13 @@
+{
+  "default_value": 0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/revenus.py",
+  "json_type": "number",
+  "label": "Salaire",
+  "name": "salaire",
+  "start_line_number": 25,
+  "stop_line_number": 30,
+  "value_type": "float"
+}

@@ -1,0 +1,14 @@
+{
+  "default_value": 1.0,
+  "definition_period": "year",
+  "dtype": "float32",
+  "entity": "household",
+  "file_path": "/openfisca_senegal/variables/weights.py",
+  "is_period_size_independent": true,
+  "json_type": "number",
+  "label": "Poids du ménage",
+  "name": "household_weight",
+  "start_line_number": 5,
+  "stop_line_number": 12,
+  "value_type": "float"
+}

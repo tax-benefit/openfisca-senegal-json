@@ -1,0 +1,13 @@
+{
+  "default_value": false,
+  "definition_period": "year",
+  "dtype": "bool_",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/revenus.py",
+  "is_period_size_independent": true,
+  "json_type": "boolean",
+  "name": "conjoint_a_des_revenus",
+  "start_line_number": 12,
+  "stop_line_number": 16,
+  "value_type": "bool"
+}

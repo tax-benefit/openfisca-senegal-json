@@ -1,0 +1,20 @@
+{
+  "default_value": "non_concerne",
+  "definition_period": "year",
+  "dtype": "int16",
+  "entity": "person",
+  "file_path": "/openfisca_senegal/variables/caracteristiques_socio_demographiques.py",
+  "is_period_size_independent": true,
+  "json_type": "string",
+  "label": "Statut marital",
+  "name": "statut_marital",
+  "possible_values": {
+    "celibataire": "Célibataire",
+    "marie": "Marié",
+    "non_concerne": "Non concerné",
+    "veuf_divorce": "Veuf ou divorcé"
+  },
+  "start_line_number": 92,
+  "stop_line_number": 99,
+  "value_type": "Enum"
+}
